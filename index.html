@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Najmin 🎀</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================
+   BASIC
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:#71394f;
+    overflow-x:hidden;
+
+    /* SOFT PASTEL BACKGROUND */
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(255,170,205,.55),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 90% 15%,
+            rgba(255,195,220,.65),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 15% 85%,
+            rgba(255,185,215,.55),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 90% 85%,
+            rgba(255,215,230,.7),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #fff8fb 0%,
+            #ffeaf3 45%,
+            #fff5f9 100%
+        );
+
+    min-height:100vh;
+}
+
+
+/* =========================
+   WATERCOLOUR CLOUDS
+========================= */
+
+body::before,
+body::after{
+    content:"";
+    position:fixed;
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    filter:blur(65px);
+    pointer-events:none;
+    z-index:0;
+}
+
+body::before{
+    background:rgba(255,143,190,.18);
+    top:-160px;
+    left:-120px;
+}
+
+body::after{
+    background:rgba(255,190,215,.25);
+    right:-150px;
+    bottom:-120px;
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.floating-heart{
+    position:fixed;
+    bottom:-50px;
+    z-index:2;
+    pointer-events:none;
+    animation:heartFloat linear forwards;
+}
+
+@keyframes heartFloat{
+
+    0%{
+        transform:translateY(0) rotate(0deg) scale(.7);
+        opacity:0;
+    }
+
+    15%{
+        opacity:.8;
+    }
+
+    100%{
+        transform:
+            translateY(-110vh)
+            rotate(25deg)
+            scale(1.15);
+        opacity:0;
+    }
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:100vh;
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+    overflow:hidden;
+
+    z-index:1;
+}
+
+
+/* soft white center */
+
+.hero::before{
+    content:"";
+    position:absolute;
+
+    width:850px;
+    height:650px;
+
+    background:rgba(255,255,255,.48);
+
+    border-radius:50%;
+
+    filter:blur(35px);
+
+    z-index:-1;
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content{
+    width:100%;
+    max-width:1000px;
+
+    position:relative;
+    z-index:3;
+}
+
+
+/* top text */
+
+.special{
+    font-size:17px;
+
+    letter-spacing:7px;
+
+    color:#96516d;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+}
+
+
+/* decorative line */
+
+.decor{
+    color:#ee7fab;
+
+    font-size:25px;
+
+    margin-bottom:5px;
+
+    letter-spacing:8px;
+}
+
+
+/* =========================
+   NAJMIN FONT
+========================= */
+
+.name{
+
+    font-family:'Allura',cursive;
+
+    font-size:
+        clamp(
+            105px,
+            19vw,
+            210px
+        );
+
+    font-weight:400;
+
+    line-height:.85;
+
+    color:#c64f82;
+
+    letter-spacing:3px;
+
+    position:relative;
+
+    display:inline-block;
+
+    text-shadow:
+        0 4px 0 rgba(255,255,255,.65),
+        0 8px 20px rgba(180,60,110,.15);
+
+    animation:nameGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes nameGlow{
+
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.025);
+    }
+}
+
+
+/* little hearts around name */
+
+.name::before{
+    content:"♡";
+
+    position:absolute;
+
+    left:-50px;
+    top:-15px;
+
+    font-family:Arial;
+
+    font-size:50px;
+
+    color:#ee79a6;
+
+    transform:rotate(-15deg);
+}
+
+.name::after{
+    content:"♡";
+
+    position:absolute;
+
+    right:-45px;
+    bottom:10px;
+
+    font-family:Arial;
+
+    font-size:55px;
+
+    color:#ee79a6;
+
+    transform:rotate(15deg);
+}
+
+
+/* =========================
+   HAPPY BIRTHDAY
+========================= */
+
+.birthday-title{
+
+    margin-top:35px;
+
+    font-family:'Playfair Display',serif;
+
+    font-size:
+        clamp(
+            30px,
+            5vw,
+            58px
+        );
+
+    color:#713348;
+
+    font-weight:600;
+}
+
+.sparkles{
+    color:#e5a632;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message{
+
+    max-width:760px;
+
+    margin:22px auto 0;
+
+    font-size:16px;
+
+    line-height:1.9;
+
+    color:#76596a;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.surprise-btn{
+
+    margin-top:32px;
+
+    border:none;
+
+    padding:17px 38px;
+
+    border-radius:50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d95b8b,
+            #b83f70
+        );
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 12px 30px rgba(177,57,108,.28);
+
+    transition:.3s;
+}
+
+.surprise-btn:hover{
+
+    transform:
+        translateY(-5px)
+        scale(1.03);
+
+    box-shadow:
+        0 18px 35px rgba(177,57,108,.35);
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section{
+
+    position:relative;
+
+    z-index:3;
+
+    padding:90px 20px;
+}
+
+
+.section-title{
+
+    text-align:center;
+
+    font-family:'Playfair Display',serif;
+
+    font-size:
+        clamp(30px,5vw,45px);
+
+    color:#73384f;
+
+    margin-bottom:12px;
+}
+
+.section-subtitle{
+
+    text-align:center;
+
+    color:#9a7180;
+
+    margin-bottom:45px;
+}
+
+
+/* =========================
+   WISH CARDS
+========================= */
+
+.wishes{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(220px,1fr)
+        );
+
+    gap:24px;
+}
+
+.wish-card{
+
+    padding:32px 25px;
+
+    text-align:center;
+
+    background:
+        rgba(255,255,255,.65);
+
+    border:
+        1px solid
+        rgba(214,93,137,.15);
+
+    border-radius:28px;
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+        0 15px 40px
+        rgba(150,70,100,.10);
+
+    transition:.4s;
+}
+
+.wish-card:hover{
+
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+        0 20px 45px
+        rgba(150,70,100,.17);
+}
+
+.wish-icon{
+
+    font-size:40px;
+
+    margin-bottom:15px;
+}
+
+.wish-card h3{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:22px;
+
+    color:#7d4058;
+
+    margin-bottom:12px;
+}
+
+.wish-card p{
+
+    color:#8b6978;
+
+    font-size:14px;
+
+    line-height:1.8;
+}
+
+
+/* =========================
+   PHOTO GALLERY
+========================= */
+
+.gallery{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(5,1fr);
+
+    gap:18px;
+}
+
+.photo-card{
+
+    height:350px;
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    position:relative;
+
+    background:#ffdce9;
+
+    box-shadow:
+        0 15px 35px
+        rgba(130,50,80,.13);
+}
+
+.photo-card img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.6s;
+}
+
+.photo-card:hover img{
+
+    transform:scale(1.08);
+}
+
+.photo-caption{
+
+    position:absolute;
+
+    left:12px;
+    right:12px;
+    bottom:12px;
+
+    padding:10px;
+
+    border-radius:15px;
+
+    background:
+        rgba(255,255,255,.88);
+
+    color:#8a4d65;
+
+    font-size:13px;
+
+    text-align:center;
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+.final{
+
+    min-height:80vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+    position:relative;
+
+    z-index:3;
+}
+
+.final-box{
+
+    max-width:800px;
+
+    padding:50px 30px;
+
+    border-radius:35px;
+
+    background:
+        rgba(255,255,255,.48);
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+        0 20px 60px
+        rgba(150,60,95,.10);
+}
+
+.cake{
+
+    font-size:75px;
+
+    animation:cakeBounce 1.5s infinite;
+}
+
+@keyframes cakeBounce{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+}
+
+.final h2{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:
+        clamp(50px,8vw,85px);
+
+    color:#c94f82;
+
+    margin:20px 0;
+}
+
+.final p{
+
+    color:#795365;
+
+    line-height:2;
+
+    font-size:15px;
+}
+
+
+/* =========================
+   MUSIC BUTTON
+========================= */
+
+.music-btn{
+
+    position:fixed;
+
+    right:20px;
+    bottom:20px;
+
+    width:58px;
+    height:58px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#c94f82;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    z-index:20;
+
+    box-shadow:
+        0 8px 25px
+        rgba(160,50,95,.3);
+
+    transition:.3s;
+}
+
+.music-btn:hover{
+
+    transform:scale(1.1);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:850px){
+
+    .gallery{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .name::before{
+        left:-20px;
+        font-size:35px;
+    }
+
+    .name::after{
+        right:-20px;
+        font-size:40px;
+    }
+}
+
+@media(max-width:550px){
+
+    .special{
+        font-size:13px;
+        letter-spacing:4px;
+    }
+
+    .hero{
+        min-height:100svh;
+    }
+
+    .name{
+        font-size:105px;
+    }
+
+    .name::before{
+        display:none;
+    }
+
+    .name::after{
+        right:-15px;
+        bottom:0;
+        font-size:35px;
+    }
+
+    .birthday-title{
+        margin-top:28px;
+        font-size:31px;
+    }
+
+    .message{
+        font-size:14px;
+        padding:0 10px;
+    }
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .photo-card{
+        height:400px;
+    }
+
+    .section{
+        padding:65px 15px;
+    }
+
+    .final-box{
+        padding:40px 20px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     MUSIC
+========================= -->
+
+<audio id="birthdayMusic" loop>
+    <source src="birthday.mp3" type="audio/mpeg">
+</audio>
+
+<button
+    class="music-btn"
+    id="musicBtn"
+    onclick="toggleMusic()"
+>
+    🎵
+</button>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="special">
+            A SPECIAL DAY FOR
+        </div>
+
+        <div class="decor">
+            ─── ♡ ───
+        </div>
+
+        <div class="name">
+            Najmin
+        </div>
+
+        <div class="birthday-title">
+            <span class="sparkles">✦</span>
+            Happy Birthday
+            <span class="sparkles">✦</span>
+        </div>
+
+        <p class="message">
+            Today is not just another day...
+            it's the day a beautiful soul came into this world.
+            May your smile always stay this beautiful. 💗
+        </p>
+
+        <button
+            class="surprise-btn"
+            onclick="openSurprise()"
+        >
+            Open Your Surprise 🎁
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WISHES
+========================= -->
+
+<section class="section">
+
+    <h2 class="section-title">
+       A Few Little Wishes For You,
+       Najmin 💕
+    </h2>
+
+    <p class="section-subtitle">
+        Because you deserve all the beautiful things in life !!
+    </p>
+
+
+    <div class="wishes">
+
+
+        <div class="wish-card">
+
+            <div class="wish-icon">
+                🌸
+            </div>
+
+            <h3>
+                Always Happy 
+            </h3>
+
+            <p>
+                May your days be filled with 
+                little moments that make 
+                your heart smile.
+            </p>
+
+        </div>
+
+
+        <div class="wish-card">
+
+            <div class="wish-icon">
+                ✨
+            </div>
+
+            <h3>
+                Beautiful Dreams
+            </h3>
+
+            <p>
+                May all the dreams you queitly 
+                wish for come true.
+            </p>
+
+        </div>
+        
+
+        <div class="wish-card">
+
+            <div class="wish-icon">
+                💗
+            </div>
+
+            <h3>
+                Keep Smiling
+            </h3>
+
+            <p>
+                And most importantly, keep that
+                beautiful smile alive and never
+                stop shining.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PHOTOS
+========================= -->
+
+<section class="section">
+
+    <h2 class="section-title">
+        Beautiful Memories 📸
+    </h2>
+
+    <p class="section-subtitle">
+        Five special moments for a special person
+    </p>
+
+
+    <div class="gallery">
+
+
+        <div class="photo-card">
+
+            <img
+                src="photo1.jpg"
+                alt="Najmin Memory 1"
+            >
+
+            <div class="photo-caption">
+                Just Beautiful 🌷
+            </div>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img
+                src="photo2.jpg"
+                alt="Najmin Memory 2"
+            >
+
+            <div class="photo-caption">
+                That Smile ✨
+            </div>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img
+                src="photo3.jpg"
+                alt="Najmin Memory 3"
+            >
+
+            <div class="photo-caption">
+                Simply You 🤍
+            </div>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img
+                src="photo4.jpg"
+                alt="Najmin Memory 4"
+            >
+
+            <div class="photo-caption">
+                Pure Elegance 🦋
+            </div>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img
+                src="photo5.jpg"
+                alt="Najmin Memory 5"
+            >
+
+            <div class="photo-caption">
+                Forever special 💕
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FINAL MESSAGE
+========================= -->
+
+<section class="final">
+
+    <div class="final-box">
+
+        <div class="cake">
+            🎂
+        </div>
+
+        <h2>
+            Happy Birthday Najmin
+        </h2>
+
+        <p>
+            May this new chapter of your life bring
+            you beautiful memories, peaceful days,
+            success and lots of happiness.
+            <br><br>
+
+            May every coming day be more beautiful
+            than the last one. Keep smiling,
+            keep shining and always stay happy. 💗
+        </p>
+
+        <br>
+
+        <div style="font-size:28px;">
+            🎀 💕 ✨ 🌸 🎂 🌸 ✨ 💕 🎀
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-line"></div>
+
+    <div class="footer-text">
+
+        Made by <span>Saklen</span>,
+        just for you <span>Najmin ❤️‍🩹</span>
+
+    </div>
+
+</footer>
+
+
+
+<script>
+
+/* =========================
+   MUSIC
+========================= */
+
+let musicPlaying = false;
+
+const music =
+    document.getElementById("birthdayMusic");
+
+const musicBtn =
+    document.getElementById("musicBtn");
+
+
+function toggleMusic(){
+
+    if(!musicPlaying){
+
+        music.play();
+
+        musicPlaying = true;
+
+        musicBtn.innerHTML = "⏸️";
+
+    }else{
+
+        music.pause();
+
+        musicPlaying = false;
+
+        musicBtn.innerHTML = "🎵";
+    }
+}
+
+
+/* =========================
+   SURPRISE BUTTON
+========================= */
+
+function openSurprise(){
+
+    createHearts(30);
+
+    const wishes =
+        document.querySelector(".section");
+
+    wishes.scrollIntoView({
+        behavior:"smooth"
+    });
+
+    music.play()
+    .then(()=>{
+
+        musicPlaying = true;
+
+        musicBtn.innerHTML = "⏸️";
+
+    })
+    .catch(()=>{});
+
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+function createHearts(number){
+
+    const hearts = [
+        "💗",
+        "💕",
+        "💖",
+        "💓",
+        "🌸",
+        "✨",
+        "🎀"
+    ];
+
+
+    for(
+        let i = 0;
+        i < number;
+        i++
+    ){
+
+        const heart =
+            document.createElement("div");
+
+        heart.className =
+            "floating-heart";
+
+        heart.innerHTML =
+            hearts[
+                Math.floor(
+                    Math.random() *
+                    hearts.length
+                )
+            ];
+
+
+        heart.style.left =
+            Math.random() * 100 + "vw";
+
+
+        heart.style.fontSize =
+            (15 + Math.random()*22) + "px";
+
+
+        heart.style.animationDuration =
+            (5 + Math.random()*5) + "s";
+
+
+        document.body.appendChild(heart);
+
+
+        setTimeout(()=>{
+
+            heart.remove();
+
+        },10000);
+
+    }
+
+}
+
+
+/* =========================
+   CONTINUOUS HEARTS
+========================= */
+
+setInterval(()=>{
+
+    createHearts(1);
+
+},1000);
+
+
+/* Initial hearts */
+
+window.addEventListener("load",()=>{
+
+    createHearts(12);
+
+});
+
+</script>
+
+</body>
+</html>
